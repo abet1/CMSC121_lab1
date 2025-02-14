@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sweets</title>
+        <style>
+            @font-face {
+                font-family: Myriad Apple;
+                src: url(resources/myriad/MYRIADAT.TTF);
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            body {
+                background-image: url('resources/images/cake.jpg');
+                background-size: cover;
+                font-family: 'Myriad Apple';
+                border: #e2c4ff solid 5px;
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+                margin-top:10px;
+                margin-bottom:10px;
+                margin-left: 30px;
+                margin-right: 30px;
+                position: relative;
+                box-sizing: border-box;
+            }
+
+            .container {
+                display: flex;
+                padding: 50px;
+                justify-content: space-between;
+            }
+
+            h1 {
+                text-align: left;
+                font-size: 50px;
+                font-family: 'Myriad Apple';
+            }
+
+            footer {
+                border-style:dotted;
+                bottom:13px;
+                left: 33px;
+                width: calc(100% - 46px);
+                background-color: #957dad;
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                margin-top: auto;
+            }
+
+            footer p {
+                color: #fec8d8;
+                font-weight: bold;
+                display: flex; 
+                justify-content: space-between;
+            }
+
+            .sign-in {
+                background-color: #957dad;
+                color: #fec8d8;
+                padding-left: 20px;
+                border-radius: 20px;
+                width: 40%;
+                border: black dotted 3px;
+                width: 100%;
+                position: relative;
+                margin-bottom: 20px;
+            }
+            .sign-in p {
+                font-weight: bold;
+                padding-left: 10px;
+
+            }
+
+            .sign-in-form  {
+                border-radius: 50px;
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 0px;
+                margin-right: 20px;
+            }
+
+            .sign-in-form input {
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px; 
+            }
+
+            .submit-button {
+                background-color: #fbded3;
+                border: 3px solid black;
+                border-radius: 5px;
+                padding: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                font-weight: bold;
+                justify-self: flex-end;
+            }
+
+            .submit-button-container {  
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 10px;
+                margin-right: 15px;
+                margin-bottom: 10px;
+            }
+
+            .content {  
+                background-color: rgba(255, 255, 255, 0.7);
+                color: #000000;
+                margin-left: 30px;
+                margin-right: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 20px;
+                width: 40%;
+                width: 100%;
+                position: relative;
+                margin-bottom: 20px;
+
+            }
+
+            .content h1 {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .content p {
+                font-size: 22px;
+            }
+
+            .content ul {
+                font-size: 22px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+
+            <div class="content">
+
+                <h1>Are you craving for Sweets?</h1>
+                
+                <h2>But you still have work to do</h2>
+
+                <p>
+                    Welcome to the <b>Bento Cake Shop!</b> Extended working hours will never be the same with the 
+                    convenience of ordering cakes right at your fingertips. Just fill up your order and you're set to choose 
+                    among thousands (<i>well, actually, only about hundreds</i>) of different cake items. Cakes range from 
+                    big, medium, and small for those who don't want to tuck in bed with a heavy stomach (<i>or maybe 
+                    just in an <u>occassional</u> diet</i>).
+                </p>
+
+                <p>
+                    No account yet? Signing up is as easy as blowing the candle on a cake. Put in your login information 
+                    at the form to the right of this page and boom (!), you're in. From here on, you can:
+                </p>
+
+                <ul>
+                    <li>Choose a branch from a list of available stores around the metro</li>
+                    <li>Order your cake and put in precious remarks and request (<i>no cherries please!</i>)</li>
+                    <li>View order from your colleagues and see what the're having (<i>for those running out of cake ideas</i>)</li>
+                </ul>
+
+                <p>
+                    Just make sure your order price consider delivery and other service charges. And also do not forget 
+                    to claim the official receipt from the delivery guy. Food becomes more delicious when it's free! So 
+                    what else are you waiting for? Order now!
+                </p>
+                
+            </div>
+
+
+
+            <div class="forms">
+
+
+
+                <div class="sign-in">
+                    <p>Sign in now!</p>
+                    <form class="sign-in-form">
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                        <br>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <br>
+                        <div class="submit-button-container">
+                            <button type="submit" class="submit-button" value="Sign In!">Sign In!</button>
+                        </div>
+                    </form>
+                </div>
+
+
+
+                <div class="sign-in">
+                    <p>New to Member?</p>
+                    <form class="sign-in-form">
+                        <input type="text" id="username" name="username" placeholder="Full Name" required>
+                        <br>
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                        <br>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <br>
+                        <div class="submit-button-container">
+                            <button type="submit" class="submit-button" value="Sign In!">Register</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+            <footer>
+                <p>
+                    <span>About | Comments | Suggestions</span>
+                    <span>All rights reserved</span>
+                </p>
+            </footer>
+
+
+    </body>
+</html>
